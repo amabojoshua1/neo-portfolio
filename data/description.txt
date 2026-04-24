@@ -1,0 +1,111 @@
+This design proposal for Amabo Joshua’s portfolio leverages the power of Next.js
+to create a high-performance, aesthetically refined digital experience. The
+design philosophy is "Architectural Minimalism"—blending the structured
+discipline of a Computer Engineer with the "chic" elegance of a modern creative
+professional.
+
+1. The Color Palette & Aesthetic Foundation
+
+We will use a high-contrast but muted palette to evoke a premium "Editorial"
+feel:
+
+  - Base: Soft Cream (Background) – Provides a warmer, more sophisticated feel
+    than pure white.
+  - Typography: Deep Charcoal – High readability and authority.
+  - Accents: Burgundy (Action items, highlights) and Sage Green (Technical
+    badges, success states).
+  - Structural Elements: Light Gray (Dividers, subtle shadows).
+
+2. The Navigation: "The Glass Pill"
+
+Since the client requested a floating navbar, we will design a "Dock-style"
+navigation bar centered at the bottom or top of the viewport.
+
+  - Appearance: A semi-transparent "Frosted Glass" (Glassmorphism) pill-shaped
+    container using the Light Gray and Soft Cream blur.
+  - Interaction: As the user scrolls, the navbar shrinks slightly.
+  - Gestures: Instead of a standard click, the icons/labels have a Magnetic
+    Effect. When the cursor nears an item, the element subtly leans towards the
+    cursor. The transitions between sections use a Cross-Dissolve and
+    Slide—where the new content feels like it's sliding into place on a silk
+    track.
+
+3. Section-by-Section Layout
+
+I. The Hero Section (The Impression)
+
+  - Layout: Split-screen or centered minimalist typography.
+  - Text: A massive, sophisticated serif font for "AMABO JOSHUA," contrasted by
+    a clean, monospace sans-serif for "(Computer Engineer)."
+  - Motion: A subtle Parallax Mouse Effect where a faint "Sage Green" geometric
+    wireframe (representing engineering) moves slightly behind the text.
+  - CTA: A Burgundy "View Work" button that expands slightly on hover.
+
+II. The "Tech Stack" Marquee
+
+  - Visual: Below the hero, a slow-moving, infinite horizontal scroll of his
+    tech stack (React Native, Nest.js, Django, Flutter).
+  - Chic Touch: The text is outlined (hollow) and only fills with Sage Green
+    color when the user scrolls over it.
+
+III. Featured Projects (The Gallery)
+
+Instead of a standard grid, we use a "Staggered Editorial Grid".
+
+  - iChef: A large feature card. Since it's a "Living Culinary Archive," the
+    background of the card could have a very subtle, desaturated video loop of
+    traditional textures.
+  - Rekom-n: A mobile-mockup display. A high-fidelity 3D render of a phone
+    "floating" in the Soft Cream space.
+  - Interaction: On hover, the project cards should not "pop" (which is
+    childish); instead, they should slowly scale up (1.02x) and the background
+    color should shift from Soft Cream to a very faint Light Gray to create
+    depth.
+
+IV. Professional Experience (The Timeline)
+
+  - Visual: A thin, vertical Burgundy line runs down the center.
+  - Content: As the user scrolls, the experience points (Seven Common Factor,
+    QTA Tech) fade in from the left and right.
+  - Gesture: "Scroll-Triggered Reveal." The text doesn't just appear; it
+    "unmasks" from top to bottom, mimicking the way code is written or read.
+
+V. Awards & Certifications (The Grid)
+
+  - Layout: A clean 3-column grid using "Bento Box" styling. Each box (HCIA
+    Datacom, IBM Design Thinking) has a subtle border.
+  - Detail: When clicked, a small side-drawer (not a popup) slides out from the
+    right to show the Credly/LinkedIn verification details.
+
+4. Professional "Gestures" & Micro-interactions
+
+To ensure the site feels "Chic" and not "Childish":
+
+  - Smooth Scroll: Implementation of Lenis Scroll or Framer Motion to give the
+    page a "weighty," premium scrolling feel.
+  - Cursor Follower: A small, Deep Charcoal ring that follows the cursor. When
+    it hovers over a clickable link, the ring expands and turns into a Soft
+    Burgundy glow.
+  - Page Transitions: When navigating between "Home" and a "Project Detail"
+    page, use a Shared Layout Animation where the project image physically moves
+    and expands to become the header of the next page. This creates a "seamless
+    flow" rather than a "loading jump."
+
+5. Technical Stack for Implementation
+
+  - Framework: Next.js 14+ (App Router) for lightning-fast server-side
+    rendering.
+  - Styling: Tailwind CSS (for the Soft Cream/Burgundy/Sage Green utility
+    classes).
+  - Animations: Framer Motion for the sophisticated gestures.
+  - Typography:
+      - Header: 'Playfair Display' or 'Cormorant Garamond' (Chic/Classy).
+      - Body/Code: 'Inter' or 'JetBrains Mono' (Professional/Engineering).
+
+Summary of the "Vibe"
+
+The site will feel like walking through a high-end modern art gallery dedicated
+to software architecture. It uses the Soft Cream to feel inviting, the Burgundy
+to show passion and leadership, and the Sage Green to highlight technical
+growth. The floating navbar serves as the anchor, ensuring the "Computer
+Engineer" is always just one refined click away.

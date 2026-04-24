@@ -1,0 +1,49 @@
+When in darkmode use a different color for the descriptive text in these sections
+
+PROFESSIONAL HISTORY
+Nov 2025 - Present
+Seven Common Factor, Douala
+IT & Software Engineering Intern
+
+Worked on website migration from using LWS cPanel to PlanetHoster (NOC terminal ) and OvhCloud. Worked on API implementation using Nest.js. Created and managed virtual machines using Proxmox.
+
+Sept 2024 - Jan 2025
+QTA Tech Sarl, Douala
+Software Engineer / Developer Intern
+
+Worked on website projects involving Next.js and Django respectively. Conducted unit testing, debugging, and integration testing operations. Optimized existing codebases to improve application performance.
+
+July 2023 - Aug 2023
+Douala IV Council, Douala
+Office Intern
+
+Supported data entry, record-keeping, and administrative technology solutions. Provided IT and technical support to improve office workflow.
+
+AWARDS & CERTIFICATIONS
+Networking
+HCIA Datacom
+Certified professional in data communication and networking architecture.
+
+Huawei
+Design
+Enterprise Design Thinking
+Practitioner of modern enterprise design thinking and user-centric problem solving.
+
+IBM
+Cloud
+AWS Certified Developer
+Expertise in building and deploying secure, scalable cloud applications.
+
+Amazon
+
+
+
+When i say descriptive text i mean text such as ;
+
+QTA Tech Sarl, Douala
+SOFTWARE ENGINEER / DEVELOPER INTERN
+
+Worked on website projects involving Next.js and Django respectively. Conducted unit testing, debugging, and integration testing operations. Optimized existing codebases to improve application performance.
+
+
+i am saying this because they don't appear clearly WHEN IN DARK MODE. In fact they almost seem absent.

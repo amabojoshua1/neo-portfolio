@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About",
+    "experience": "Experience",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "greeting": "I AM",
+    "role": "COMPUTER ENGINEER",
+    "tagline": "Architecting precision-engineered solutions with creative elegance."
+  },
+  "scroll": "Scroll",
+  "about": {
+    "title": "A VISION OF PRECISION",
+    "content": "A high-performance Computer Engineer and Full-Stack Developer specializing in software architecture, cloud infrastructure, and human-centric digital experiences. Based in Douala, Cameroon, I bridge the gap between complex engineering concepts and seamless user interfaces."
+  },
+  "experience": {
+    "title": "PROFESSIONAL HISTORY",
+    "item1": {
+      "company": "Seven Common Factor, Douala",
+      "role": "IT & Software Engineering Intern",
+      "period": "Nov 2025 - Present",
+      "description": "Worked on website migration from using LWS cPanel to PlanetHoster (NOC terminal ) and OvhCloud. Worked on API implementation using Nest.js. Created and managed virtual machines using Proxmox."
+    },
+    "item2": {
+      "company": "QTA Tech Sarl, Douala",
+      "role": "Software Engineer / Developer Intern",
+      "period": "Sept 2024 - Jan 2025",
+      "description": "Worked on website projects involving Next.js and Django respectively. Conducted unit testing, debugging, and integration testing operations. Optimized existing codebases to improve application performance."
+    },
+    "item3": {
+      "company": "Douala IV Council, Douala",
+      "role": "Office Intern",
+      "period": "July 2023 - Aug 2023",
+      "description": "Supported data entry, record-keeping, and administrative technology solutions. Provided IT and technical support to improve office workflow."
+    }
+  },
+  "projects": {
+    "title": "Selected Work",
+    "view": "View Project",
+    "subtitle": "Refining complex data into minimalist visual systems."
+  },
+  "awards": {
+    "title": "Awards & Certifications",
+    "item1": {
+      "category": "Networking",
+      "title": "HCIA Datacom",
+      "issuer": "Huawei",
+      "description": "Certified professional in data communication and networking architecture."
+    },
+    "item2": {
+      "category": "Design",
+      "title": "Enterprise Design Thinking",
+      "issuer": "IBM",
+      "description": "Practitioner of modern enterprise design thinking and user-centric problem solving."
+    },
+    "item3": {
+      "category": "Cloud",
+      "title": "AWS Certified Developer",
+      "issuer": "Amazon",
+      "description": "Expertise in building and deploying secure, scalable cloud applications."
+    }
+  },
+  "contact": {
+    "title": "Connect",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "location": "DOUALA, CAMEROON",
+    "precision": "PRECISION ENGINEERED",
+    "rights": "© 2026 AMABO JOSHUA. ALL RIGHTS RESERVED."
+  }
+}
