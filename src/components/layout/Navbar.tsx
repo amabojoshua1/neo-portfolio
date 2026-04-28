@@ -33,7 +33,7 @@ export default function Navbar() {
   if (!mounted) return null;
 
   return (
-    <nav className="fixed bottom-40 left-1/2 -translate-x-1/2 z-50 px-4 w-full max-w-2xl">
+    <nav className="fixed bottom-28 left-1/2 -translate-x-1/2 z-50 px-4 w-full max-w-2xl">
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

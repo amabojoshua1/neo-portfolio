@@ -75,8 +75,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/portfolio.jpg",
-    apple: "/portfolio.jpg",
+    icon: "/portfolio.png",
+    apple: "/portfolio.png",
   },
 };
 
