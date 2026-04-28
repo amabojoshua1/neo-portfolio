@@ -35,7 +35,7 @@ export default function Footer() {
             label="GitHub"
           />
           <ContactLink
-            href="https://linkedin.com/in/amabojoshua"
+            href="https://linkedin.com/in/amabo-joshua"
             icon={<Link className="w-5 h-5" />}
             label="LinkedIn"
           />

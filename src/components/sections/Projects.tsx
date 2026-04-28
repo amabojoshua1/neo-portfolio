@@ -19,15 +19,15 @@ const projects: Project[] = [
   {
     title: "IChef",
     category: "Mobile | Social",
-    image: "",
+    image: "/iChef.avif",
     link: "",
     github: "https://github.com/amabojoshua1/i-chef",
     tags: ["Flutter", "Node.js"],
   },
   {
-    title: "Rekomn App",
+    title: "Rekomən App",
     category: "Mobile | AI",
-    image: "",
+    image: "/rekomen.jpeg",
     link: "",
     github: "https://github.com/amabojoshua1/Rekom-n",
     tags: ["React Native", "Django", "Django REST", "AI"],
@@ -35,7 +35,7 @@ const projects: Project[] = [
   {
     title: "eDS - City of ExcellenceDriving School",
     category: "Web | Business",
-    image: "",
+    image: "/excellence_logo.jpg",
     link: "https://city-of-excellence-driving-school.vercel.app",
     github: "https://github.com/amabojoshua1/eDS",
     tags: ["Next.js", "React", "Frontend"],
@@ -45,6 +45,7 @@ const projects: Project[] = [
     category: "Web | Health Tech",
     image: "",
     link: "",
+    github: "https://github.com/qtatech/kurebridge",
     tags: ["Django", "Teleconsultation", "Backend"],
   },
 ];

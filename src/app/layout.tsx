@@ -56,6 +56,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/portfolio-Icon.webp",
+    apple: "/portfolio-Icon.webp",
+  },
 };
 
 export default function RootLayout({
