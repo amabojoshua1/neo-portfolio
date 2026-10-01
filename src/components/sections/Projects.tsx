@@ -48,6 +48,14 @@ const projects: Project[] = [
     github: "https://github.com/qtatech/kurebridge",
     tags: ["Django", "Teleconsultation", "Backend"],
   },
+  {
+    title: "PEIP Pharverico",
+    category: "Mobile | Health Tech",
+    image: "",
+    link: "",
+    github: "https://github.com/amabojoshua1/Pharverico",
+    tags: ["Django", "Flutter", "Backend", "AI"],
+  },
 ];
 
 export default function Projects() {
@@ -111,14 +119,15 @@ export default function Projects() {
                     )}
 
                     {/* Overlay on hover */}
-                    <div className="absolute inset-0 bg-burgundy/90 dark:bg-burgundy/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center gap-6 p-8 text-center backdrop-blur-md">
-                      <div className="flex gap-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                    <div className="absolute inset-0 bg-burgundy/90 dark:bg-burgundy/80 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100 transition-all duration-500 flex flex-col items-center justify-center gap-6 p-4 sm:p-8 text-center backdrop-blur-md">
+                      <div className="flex gap-6 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 md:group-focus-within:translate-y-0 transition-transform duration-500 ease-out">
                         {project.github && (
                           <a
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-4 bg-white/10 hover:bg-white/20 hover:scale-110 rounded-full border border-white/20 transition-all shadow-xl"
+                            aria-label={`View ${project.title} source code on GitHub`}
+                            className="p-4 bg-white/10 hover:bg-white/20 hover:scale-110 rounded-full border border-white/20 transition-all shadow-xl focus-visible:outline-2 focus-visible:outline-white"
                           >
                             <Code className="w-6 h-6 text-white" />
                           </a>
@@ -128,13 +137,14 @@ export default function Projects() {
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-4 bg-white/10 hover:bg-white/20 hover:scale-110 rounded-full border border-white/20 transition-all shadow-xl"
+                            aria-label={`Visit ${project.title} website`}
+                            className="p-4 bg-white/10 hover:bg-white/20 hover:scale-110 rounded-full border border-white/20 transition-all shadow-xl focus-visible:outline-2 focus-visible:outline-white"
                           >
                             <ExternalLink className="w-6 h-6 text-white" />
                           </a>
                         )}
                       </div>
-                      <p className="text-white text-sm font-bold uppercase tracking-[0.3em] translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75 ease-out">
+                      <p className="text-white text-sm font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em] translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 md:group-focus-within:translate-y-0 transition-transform duration-500 delay-75 ease-out">
                         {t("projects.view")}
                       </p>
                     </div>

@@ -39,7 +39,7 @@ export default function Contact() {
             <ContactLink
               icon={<Code />}
               label="GitHub"
-              href="https://github.com/amabojoshua"
+              href="https://github.com/amabojoshua1"
             />
           </div>
 

@@ -15,7 +15,7 @@
   "scroll": "Scroll",
   "about": {
     "title": "A VISION OF PRECISION",
-    "content": "A high-performance Computer Engineer and Full-Stack Developer specializing in software architecture, cloud infrastructure, and human-centric digital experiences. Based in Douala, Cameroon, I bridge the gap between complex engineering concepts and seamless user interfaces."
+    "content": "A high-performance Computer Engineer, Backend Developer and Product Manager specializing in software architecture, cloud infrastructure, and human-centric digital experiences. Based in Douala, Cameroon, I bridge the gap between complex engineering concepts and seamless user interfaces."
   },
   "experience": {
     "title": "PROFESSIONAL HISTORY",
@@ -62,6 +62,12 @@
       "title": "AWS Certified Developer",
       "issuer": "Amazon",
       "description": "Expertise in building and deploying secure, scalable cloud applications."
+    },
+    "item4": {
+      "category": "Engineering",
+      "title": "Bachelor's Degree in Computer Engineering",
+      "issuer": "University of Buea",
+      "description": "Completed a comprehensive program in computer engineering with a focus on software development and systems design."
     }
   },
   "contact": {

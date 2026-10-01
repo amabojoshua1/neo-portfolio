@@ -25,38 +25,36 @@ export default function Navbar() {
     setMounted(true);
   }, []);
 
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
   if (!mounted) return null;
 
   return (
-    <nav className="fixed bottom-28 left-1/2 -translate-x-1/2 z-50 px-4 w-full max-w-2xl">
+    <nav
+      aria-label="Primary navigation"
+      className="site-nav fixed bottom-4 left-1/2 -translate-x-1/2 z-50 px-2 w-full max-w-2xl"
+    >
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="bg-burgundy/80 text-white rounded-full px-4 md:px-6 py-3 flex items-center justify-between shadow-2xl shadow-burgundy/20 backdrop-blur-xl border border-white/10"
+        className="bg-burgundy/90 text-white rounded-2xl sm:rounded-full px-2 sm:px-4 md:px-6 py-2 sm:py-3 flex items-center justify-between shadow-2xl shadow-burgundy/20 backdrop-blur-xl border border-white/10"
       >
-        <div className="flex items-center gap-2 md:gap-6 overflow-hidden">
+        <div className="nav-links min-w-0 flex-1 flex items-center gap-3 sm:gap-6 overflow-x-auto">
           {navItems.map((item) => (
-            <button
+            <a
               key={item.id}
-              onClick={() => scrollTo(item.id)}
-              className="text-[11px] font-mono uppercase tracking-[0.2em] hover:text-sage-green transition-colors duration-300 whitespace-nowrap"
+              href={`#${item.id}`}
+              className="shrink-0 text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.1em] sm:tracking-[0.2em] hover:text-sage-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white transition-colors duration-300 whitespace-nowrap"
             >
               {t(item.label)}
-            </button>
+            </a>
           ))}
         </div>
 
-        <div className="flex items-center gap-3 pl-4 border-l border-white/10 ml-2">
+        <div className="shrink-0 flex items-center gap-1 sm:gap-3 pl-2 sm:pl-4 border-l border-white/10 ml-2">
           {/* Language Toggle */}
           <Magnetic>
             <button
               onClick={() => setLanguage(language === "en" ? "fr" : "en")}
-              className="p-2 hover:bg-white/10 rounded-full transition-colors group"
+              className="p-2 hover:bg-white/10 rounded-full transition-colors group focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
               title={
                 language === "en" ? "Passer en Français" : "Switch to English"
               }
@@ -70,7 +68,8 @@ export default function Navbar() {
           <Magnetic>
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 hover:bg-white/10 rounded-full transition-colors group"
+              aria-label="Toggle color theme"
+              className="p-2 hover:bg-white/10 rounded-full transition-colors group focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
             >
               {theme === "dark" ? (
                 <Sun className="w-4 h-4 group-hover:rotate-45 transition-transform" />
@@ -86,7 +85,8 @@ export default function Navbar() {
               href="https://wa.me/237672446964"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 bg-green-500 hover:bg-green-600 rounded-full transition-colors group shadow-lg"
+              aria-label="Contact on WhatsApp"
+              className="p-2 bg-green-500 hover:bg-green-600 rounded-full transition-colors group shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
             >
               <MessageSquare className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
             </a>

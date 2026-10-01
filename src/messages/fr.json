@@ -15,7 +15,7 @@
   "scroll": "Défiler",
   "about": {
     "title": "Une vision de précision",
-    "content": "Ingénieur informaticien et développeur Full-Stack de haute performance spécialisé dans l'architecture logicielle, l'infrastructure cloud et les expériences numériques centrées sur l'humain. Basé à Douala, au Cameroun, je comble le fossé entre les concepts d'ingénierie complexes et les interfaces utilisateur fluides."
+    "content": "ngénieur informatique, développeur back-end et chef de produit, je suis spécialisé dans l’architecture logicielle, les infrastructures cloud et la création d’expériences numériques centrées sur l’humain. Basé à Douala, au Cameroun, je fais le lien entre des concepts d’ingénierie complexes et des interfaces utilisateur intuitives."
   },
   "experience": {
     "title": "Historique professionnel",
@@ -62,7 +62,13 @@
       "title": "AWS Certified Developer",
       "issuer": "Amazon",
       "description": "Expertise dans la construction et le déploiement d'applications cloud sécurisées et redimensionnables."
-    }
+    },
+    "item4": {
+      "category": "Ingénierie",
+      "title": "Licence en génie informatique",
+      "issuer": "Université de Buea",
+      "description": "Formation complète en génie informatique, axée sur le développement logiciel et la conception de systèmes."
+  }
   },
   "contact": {
     "title": "Connecter",

@@ -17,6 +17,8 @@ This repository contains a single-page portfolio built with the Next.js App Rout
 | `src/providers/I18nProvider.tsx` | English/French state and nested message lookup. |
 | `src/messages/en.json` | English interface and portfolio copy. |
 | `src/messages/fr.json` | French interface and portfolio copy. |
+| `src/app/sitemap.ts` | Search-engine sitemap for the canonical home page. |
+| `src/app/robots.ts` | Crawler access rules and sitemap location. |
 | `src/lib/utils.ts` | Shared utility functions. |
 | `public/` | Images, icons and downloadable assets served from the site root. |
 
@@ -29,13 +31,13 @@ This repository contains a single-page portfolio built with the Next.js App Rout
 - **About details:** The about paragraph and heading are translated. The skill labels in `src/components/sections/About.tsx` are currently static.
 - **Navigation and contact links:** Update the link list and destinations in `src/components/layout/Navbar.tsx` and `src/components/layout/Footer.tsx`. The footer's contact anchor is `#contact`.
 
-Keep the English and French message files in sync by preserving the same nested key structure. The provider uses dot-separated keys and returns the key itself when a translation is unavailable.
+Keep the English and French message files in sync by preserving the same nested key structure. Messages are imported statically so server-rendered HTML includes real copy before hydration. The provider uses dot-separated keys and returns the key itself when a translation is unavailable.
 
 ## Static Assets and Metadata
 
 Place site assets in `public/` and reference them from components with root-relative paths, for example `/iChef.avif`. The About section uses `/me.jpg`; project imagery and the resume download are also served from `public/`.
 
-Page title, description, social metadata, metadata base URL, and favicon paths are configured in `src/app/layout.tsx`. Update those values when the site identity, domain, or social preview changes. The resume link expects `public/resume.pdf`.
+Page title, description, canonical URL, social metadata, metadata base URL, and favicon paths are configured in `src/app/layout.tsx`. The home page also emits `Person` JSON-LD structured data. Update these alongside `src/app/sitemap.ts` and `src/app/robots.ts` if the public domain changes. The resume link expects `public/resume.pdf`.
 
 ## UI and Theme
 

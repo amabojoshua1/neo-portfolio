@@ -10,6 +10,13 @@ export default function Awards() {
 
   const awards = [
     {
+      title: "Bachelor's Degree in Computer Engineering",
+      issuer: "University of Buea",
+      category: "Engineering",
+      icon: <Cpu className="w-6 h-6 text-burgundy" />,
+      description: t("awards.item4.description"),
+    },
+    {
       title: "HCIA Datacom",
       issuer: "Huawei",
       category: "Networking",

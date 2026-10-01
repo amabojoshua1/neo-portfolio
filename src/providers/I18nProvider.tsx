@@ -1,6 +1,8 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
+import enMessages from "@/messages/en.json";
+import frMessages from "@/messages/fr.json";
 
 type Language = "en" | "fr";
 
@@ -11,24 +13,16 @@ interface I18nContextType {
 }
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
+const messages = { en: enMessages, fr: frMessages };
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("en");
-  const [messages, setMessages] = useState<
-    Record<string, Record<string, unknown>>
-  >({});
 
   useEffect(() => {
-    const loadMessages = async () => {
-      const en = await import("@/messages/en.json");
-      const fr = await import("@/messages/fr.json");
-      setMessages({ en: en.default, fr: fr.default });
-    };
-    loadMessages();
-  }, []);
+    document.documentElement.lang = language;
+  }, [language]);
 
   const t = (key: string) => {
-    if (!messages[language]) return key;
     const keys = key.split(".");
     let value: unknown = messages[language];
     for (const k of keys) {

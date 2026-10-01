@@ -49,9 +49,9 @@ export default function Footer() {
 
         <div className="w-full h-px bg-white/10 mb-12" />
 
-        <div className="flex flex-col md:flex-row justify-between w-full items-center gap-8 opacity-40 font-mono text-[10px] uppercase tracking-[0.3em]">
-          <p>{t("contact.rights")}</p>
-          <div className="flex gap-12">
+        <div className="flex flex-col md:flex-row justify-between w-full items-center gap-6 md:gap-8 opacity-40 font-mono text-[10px] uppercase tracking-[0.15em] md:tracking-[0.3em]">
+          <p className="max-w-full text-center">{t("contact.rights")}</p>
+          <div className="flex flex-wrap justify-center gap-4 md:gap-12">
             <span>{t("contact.location")}</span>
             <span>{t("contact.precision")}</span>
           </div>

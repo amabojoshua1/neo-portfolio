@@ -45,10 +45,16 @@ export default function About() {
 
           <div className="mt-12 flex flex-wrap gap-4">
             <div className="px-4 py-2 bg-burgundy/10 dark:bg-burgundy/20 rounded-full border border-burgundy/20 text-[10px] font-mono tracking-widest text-burgundy">
+              Django
+            </div>
+            <div className="px-4 py-2 bg-burgundy/10 dark:bg-burgundy/20 rounded-full border border-burgundy/20 text-[10px] font-mono tracking-widest text-burgundy">
+              NestJS
+            </div>
+            <div className="px-4 py-2 bg-burgundy/10 dark:bg-burgundy/20 rounded-full border border-burgundy/20 text-[10px] font-mono tracking-widest text-burgundy">
               Flutter
             </div>
             <div className="px-4 py-2 bg-burgundy/10 dark:bg-burgundy/20 rounded-full border border-burgundy/20 text-[10px] font-mono tracking-widest text-burgundy">
-              Django
+              React/React Native
             </div>
             <div className="px-4 py-2 bg-burgundy/10 dark:bg-burgundy/20 rounded-full border border-burgundy/20 text-[10px] font-mono tracking-widest text-burgundy">
               UI/UX Design

@@ -16,6 +16,11 @@ const technologies = [
   "LINUX",
   "UI/UX DESIGN",
   "GRAPHIC DESIGN",
+  "DATABASES",
+  "CLOUD COMPUTING",
+  "SOFTWARE ARCHITECTURE",
+  "PRODUCT DESIGN",
+  "PRODUCT MANAGEMENT",
 ];
 
 export default function TechMarquee() {
