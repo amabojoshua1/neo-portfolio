@@ -90,7 +90,7 @@ export default function Projects() {
               >
                 {/* Image Container */}
                 <div className="w-full md:w-3/5">
-                  <div className="relative aspect-[16/10] overflow-hidden rounded-3xl bg-zinc-200 dark:bg-zinc-800 shadow-lg group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-700">
+                  <div className="relative aspect-16/10 overflow-hidden rounded-3xl bg-zinc-200 dark:bg-zinc-800 shadow-lg group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-700">
                     {project.image ? (
                       <Image
                         src={project.image}
