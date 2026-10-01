@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amabo Joshua Portfolio
+
+A responsive, single-page portfolio for Amabo Joshua, a Computer Engineer and Full-Stack Developer. It presents selected projects, professional experience, awards, and contact links, with English and French copy and light/dark themes.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and start the development server:
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). The app uses Next.js App Router; the home page is composed in `src/app/page.tsx`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server. |
+| `npm run lint` | Run ESLint. |
+| `npm run build` | Create a production build. |
+| `npm run start` | Serve the production build locally. |
 
-## Learn More
+There is currently no test script configured in `package.json`.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js 16 with React 19 and TypeScript
+- Tailwind CSS 4
+- Framer Motion for section and content animation
+- `next-themes` for theme selection
+- React Lenis for smooth scrolling
+- JSON message files and a small React context for English/French copy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Documentation
 
-## Deploy on Vercel
+See [docs/PROJECT.md](docs/PROJECT.md) for the source layout, content editing locations, translation workflow, assets, and production notes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app can be deployed to a Next.js-compatible host such as Vercel. Verify a release locally with `npm run lint` and `npm run build`; configure the host to install dependencies from `package-lock.json` and run the Next.js production build.
