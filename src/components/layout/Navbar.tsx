@@ -42,7 +42,7 @@ export default function Navbar() {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="shrink-0 text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.1em] sm:tracking-[0.2em] hover:text-sage-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white transition-colors duration-300 whitespace-nowrap"
+              className="shrink-0 text-[10px] sm:text-[11px] font-mono uppercase tracking-widest sm:tracking-[0.2em] hover:text-sage-green focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white transition-colors duration-300 whitespace-nowrap"
             >
               {t(item.label)}
             </a>
@@ -54,7 +54,7 @@ export default function Navbar() {
           <Magnetic>
             <button
               onClick={() => setLanguage(language === "en" ? "fr" : "en")}
-              className="p-2 hover:bg-white/10 rounded-full transition-colors group focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+              className="p-2 hover:bg-white/10 rounded-full transition-colors group focus-visible:outline-2 focus-visible:outline-white"
               title={
                 language === "en" ? "Passer en Français" : "Switch to English"
               }
@@ -69,7 +69,7 @@ export default function Navbar() {
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               aria-label="Toggle color theme"
-              className="p-2 hover:bg-white/10 rounded-full transition-colors group focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+              className="p-2 hover:bg-white/10 rounded-full transition-colors group focus-visible:outline-2 focus-visible:outline-white"
             >
               {theme === "dark" ? (
                 <Sun className="w-4 h-4 group-hover:rotate-45 transition-transform" />
@@ -86,7 +86,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Contact on WhatsApp"
-              className="p-2 bg-green-500 hover:bg-green-600 rounded-full transition-colors group shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+              className="p-2 bg-green-500 hover:bg-green-600 rounded-full transition-colors group shadow-lg focus-visible:outline-2 focus-visible:outline-white"
             >
               <MessageSquare className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
             </a>
